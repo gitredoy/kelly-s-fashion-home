@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*===========burger-menu-end=============*/
+body {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow-y:hidden; 
+  background-size: cover;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-toggle.on .two {
+  opacity: 0;
+}
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  list-style: none;
+  margin: 4em auto;
+  text-align: center;
+}
+nav ul.hidden {
+  display: none;
+}
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+  line-height: 1.5;
+  width: 100%;
+  display: block;
+}
+nav ul a:hover {
+ color:#ccc;
+}
+
+.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color:rgba(57, 81, 199,1);
+  position: absolute;
+}
+
+
+.social {
+  position: absolute;
+  width: 100%;
+  top: 88%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 50px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+  font-size: 30px;
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+
+
+
+
+/*===========burger-menu-end=============*/
+
+
+
+#card-height {
+    height: 280px;
+}
+
+.my_logo > img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: -90px;
+}
+
+
+/* Zoom In #1 */
+
+.mycard img {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.mycard {
+    position: relative;
+    border: 1px solid #f1f1f1;
+    background: #ba2873;
+}
+
+.mycard:hover {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+/*
+    -webkit-box-shadow: -1px 3px 5px 4px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: -1px 3px 5px 4px rgba(0, 0, 0, 0.17);
+    box-shadow: -1px 3px 5px 4px rgba(0, 0, 0, 0.17);
+*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+/*    opacity: 0;*/
+    transition: .5s ease;
+    background-color:rgba(0, 140, 186,0);
+}
+.mycard:hover .overlay{
+    background-color:rgba(0, 140, 186,0.5);
+
+}
+.mycard:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.my-card-txt {
+    text-align: center;
+    position: absolute;
+    bottom:-15%;
+    left: 30%;
+    color:#b00000;
+    text-transform: unset;
+    /*text-shadow: 2px 2px #000;*/
+    font-family: 'Pacifico', cursive;
+
+    
+
+}
+
+.my-card-txt > h5{
+    font-size: 29px;
+}
+
+/*MENU CSS START*/
+
+.no_padd{
+    padding-left: 0px;
+}
+
+
